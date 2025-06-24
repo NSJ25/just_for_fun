@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conversion de Température</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body onload="init()">
+    <header>
+        <h1>Conversion de Température</h1>
+    </header>
+
+    <main>
+
+        <section>
+
+            <fieldset>
+                <legend>Choisissez le type de conversion</legend>
+
+                <p>
+                    Bienvenue dans le convertisseur de température !
+                </p>
+
+                <p>
+                    Vous pouvez convertir des températures entre Celsius, Fahrenheit et Kelvin.
+                </p>
+
+                <p>
+                    Utilisez le menu déroulant pour sélectionner le type de conversion de température que vous
+                    souhaitez effectuer.
+                </p>
+
+                <p>
+                    Ensuite, entrez la température dans le champ approprié et cliquez sur le bouton "Convertir".
+                </p>
+
+                <label for="conversionType">Type de conversion :</label>
+                <select id="conversionType">
+                    <option value="">--Sélectionnez--</option>
+                    <option value="celEnFahr">Celsius en Fahrenheit</option>
+                    <option value="celEnKel">Celsius en Kelvin</option>
+                    <option value="fahrEnCel">Fahrenheit en Celsius</option>
+                    <option value="fahrEnKel">Fahrenheit en Kelvin</option>
+                    <option value="kelEnCel">Kelvin en Celsius</option>
+                    <option value="kelEnFahr">Kelvin en Fahrenheit</option>
+                </select>
+                <button type="button" onclick="fenêtreConvertion()">Soumettre</button>
+            </fieldset>
+        </section>
+
+        <!-- Fenêtre de dialogue pour chaque operation -->
+
+        <dialog id="celEnFahr">
+            <section>
+                <h2>Conversion de Celsius en Fahrenheit</h2>
+                <label for="celsius">Température en Celsius :</label>
+                <input type="number" id="celsius" placeholder="...">
+                <p> température en Fahrenheit :
+                    <oniput type="text" id="resultCelEnFahr" readonly>
+                </p>
+                <button type="button" onclick="convCelEnFahr()">Convertir</button>
+                <button type="button" onclick="fermerPopup('celEnFahr')">Fermer</button>
+            </section>    
+        </dialog>
+
+        <dialog id="celEnKel">
+            <section>
+                <h2>Conversion de Celsius en Kelvin</h2>
+                <label for="celsius2">Température Celsius :</label>
+                <input type="number" id="celsius2" placeholder="..."> 
+                <p> température en Kelvin :
+                    <oniput type="text" id="resultCelEnKel" readonly>
+                </p>
+                <button type="button" onclick="convCelEnKel()">Convertir</button>
+                <button type="button" onclick="fermerPopup('celEnKel')">Fermer</button>
+            </section>    
+        </dialog>
+
+        <dialog id="fahrEnCel">
+            <section>
+                <h2>Conversion de Fahrenheit en Celsius</h2>
+                <label for="fahrenheit">Température Fahrenheit :</label>
+                <input type="number" id="fahrenheit" placeholder="...">
+                <p> température en Celsius :
+                    <oniput type="text" id="resultFahrEnCel" readonly>
+                </p>
+                <button type="button" onclick="convFahrEnCel()">Convertir</button>
+                <button type="button" onclick="fermerPopup('fahrEnCel')">Fermer</button>
+            </section>    
+        </dialog>
+
+         <dialog id="fahrEnKel">
+            <section>
+                <h2>Conversion de Fahrenheit en Kelvin </h2>
+                <label for="fahrenheit2">Température Fahrenheit :</label>
+                <input type="number" id="fahrenheit2" placeholder="...">
+                <p> température en Kelvin :
+                    <oniput type="text" id="resultFahrEnKel" readonly>
+                </p>
+                <button type="button" onclick="convFahrEnKel()">Convertir</button>
+                <button type="button" onclick="fermerPopup('fahrEnKel')">Fermer</button>
+            </section>    
+        </dialog>
+
+        <dialog id="kelEnCel">
+            <section>
+                <h2>Conversion de Kelvin en Celsius </h2>
+                <label for="kelvin">Température en Kelvin :</label>
+                <input type="number" id="kelvin" placeholder="...">
+                <p> température en Celsius :
+                    <oniput type="text" id="resultKelEnCel" readonly>
+                </p>
+                <button type="button" onclick="convKelEnCel()">Convertir</button>
+                <button type="button" onclick="fermerPopup('kelEnCel')">Fermer</button>
+            </section>    
+        </dialog>
+
+        <dialog id="kelEnFahr">
+            <section>
+                <h2>Conversion de Kelvin en Fahrenheit </h2>
+                <label for="kelvin2">Température Kelvin :</label>
+                <input type="number" id="kelvin2" placeholder="...">
+                <p> température en Fahrenheit :
+                    <oniput type="text" id="resultKelEnFahr" readonly>
+                </p>
+                <button type="button" onclick="convKelEnFahr()">Convertir</button>
+                <button type="button" onclick="fermerPopup('kelEnFahr')">Fermer</button>
+            </section>    
+        </dialog>
+
+        <!-- Boite de dialogue pour un easter egg -->
+
+        <dialog id="image">
+                <button type="button" onclick="fermerPopup('image')">Fermer</button>   
+        </dialog>
+    </main>
+
+    <footer>
+        <p onclick="afficherPopup('image')">The Ghostwriter 25, juin 2025</p>
+    </footer>
+</body>

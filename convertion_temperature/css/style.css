@@ -1,0 +1,155 @@
+html{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-color: #620606;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    padding: 30px;
+    border: 2px solid #000000;
+    border-radius: 20%;
+    height: 80vh;
+    text-align: center;
+    margin: 25px;
+}
+fieldset{
+    text-align: left;
+    background-color: #620606;
+    padding: 13px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px beige;
+}
+
+input[type="number"]{
+    width: 100px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: black;
+    color: #a50000;
+}
+
+button{
+    background-color: #000000;
+    color: #a50000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:active{
+    background-color: #555;
+}   
+
+header{
+   padding: 0px;
+   margin: 0px;
+}
+
+select{
+    height: 35px;
+    width: 180px;
+    padding: 5px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: black;
+    color: #a50000;
+    cursor: pointer;
+}
+
+h1{
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #f9f9f9;
+    padding: 5px;
+}
+
+legend{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    background-color: #620606;
+    font-family: 'courier new', courier, monospace;
+}
+
+footer{
+    margin-top: 65px;
+    font-size: 0.8em;
+    color: #0c0c0c;
+    text-align: center;
+    font-family: 'comic sans ms', cursive, sans-serif;
+    font-weight: bold;
+}
+footer p{
+    opacity: 0.8;
+    font-size: 15px;
+    color: black;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+p{
+    font-size: 18px;
+    margin: 10px 0;
+    font-family: 'comic sans ms', cursive, sans-serif;
+    color: #e3e3e3;
+}
+
+label{
+    font-size: 20px;
+    margin-right: 10px;
+    font-family: 'comic sans ms', cursive, sans-serif;
+    color: #e3e3e3;
+}
+
+dialog{
+    background-color: #5b0500;
+    color: #000000;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0 0 10px beige;
+    width: 60%;
+    height: 60%;
+}
+dialog p{
+    padding: 10px;
+    font-family: 'comic sans ms', cursive, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+dialog section{
+    padding: 30px;
+}
+
+oniput{
+    width: 100px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: black;
+    color: #5b0500;
+}
+
+#image{
+    background-image: url('img/logo.jpg');
+    width: 30%;
+    height: 68%;
+    border-radius: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: left;
+}
