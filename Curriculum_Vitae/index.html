@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Petemoss&family=Nova+Mono&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+
+<body onload="init()">
+    <header>
+        <h1>The Ghostwriter 25</h1>
+        <p>Développeur systèmes embarqués</p>
+    </header>
+
+    <main>
+        <div id="conteneur">
+            <section id="infoGauche">
+
+                <article id="photo">
+                    <div id="image"></div>
+                </article>
+
+                <article id="contact">
+                    <h2>Contact</h2>
+
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" µ
+                            stroke="currentColor" class="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                        </svg> Email:
+                        <a href="mailto:theghostwriter25@gmail.com"> theghostwriter25@gmail.com </a>
+                    </p>
+
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                        </svg> Téléphone:
+                        <a href="tel=+32000000000"> +32 000 00 00 00 </a>
+                    </p>
+
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="icon"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 0C5.37 0 0 5.373 0 12a12 12 0 0 0 8.205 11.385c.6.113.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.729.082-.729 1.204.084 1.838 1.236 1.838 1.236 1.07 1.834 2.809 1.304 3.495.997.107-.776.42-1.305.762-1.605-2.665-.306-5.467-1.332-5.467-5.932 0-1.31.467-2.381 1.235-3.22-.123-.303-.535-1.524.118-3.176 0 0 1.008-.322 3.3 1.23a11.51 11.51 0 0 1 6 0c2.29-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.874.12 3.176.77.839 1.233 1.91 1.233 3.22 0 4.61-2.807 5.624-5.48 5.92.43.37.823 1.096.823 2.21v3.28c0 .319.216.694.825.576A12.001 12.001 0 0 0 24 12c0-6.627-5.373-12-12-12Z" />
+                            Github:
+                        </svg>
+                        <a href="https://github.com/NSJ25"> The Ghoswriter 25 </a>
+                    </p>
+
+                </article>
+
+                <article id="langues">
+                    <h2>Langues</h2>
+                    <ul>
+                        <li>
+                            <label for="fr">Français</label>
+                            <input type="range" name="français" id="fr" value="0" min="0" max="7" step="1"> :
+                            <span id="niveauFr"></span>
+                        </li>
+
+                        <li>
+                            <label for="en">Anglais</label>
+                            <input type="range" name="anglais" id="en" value="0" min="0" max="7" step="1"> :
+                            <span id="niveauEn"></span>
+                        </li>
+
+                        <li>
+                            <label for="li">Lingala</label>
+                            <input type="range" name="lingala" id="li" value="0" min="0" max="7" step="1"> :
+                            <span id="niveauLi"></span>
+                        </li>
+                    </ul>
+
+                </article>
+
+                <article id="competences">
+                    <h2> competences </h2>
+                    <ul>
+                        <li class="competences"> HTML </li>
+                        <li class="competences"> CSS </li>
+                        <li class="competences"> JavaScript </li>
+                        <li class="competences"> Python </li>
+                        <li class="competences"> C++ </li>
+                        <li class="competences"> MicroPython </li>
+                        <li class="competences"> Markdown (fichiers README) </li>
+                    </ul>
+                    
+                </article>
+
+                <article id="loisirs">
+                    <h2>Centres d'intérêt </h2>
+                    <ul>
+                        <li>Informatique </li>
+                        <li>Utilisation de Linux </li>
+                        <li>Musique (composition & écoute)</li>
+                        <li>Écriture et citations</li>
+                        <li>Animés japonais</li>
+                        <li>Apprentissage autodidacte</li>
+                    </ul>
+
+                </article>
+            </section>
+
+            <section id="infoDroite">
+
+                <article id="profil">
+                    <h2>Profil</h2>
+                    <p>
+                        Étudiant en première année de bachelier en technologie de l’informatique,
+                        je développe en parallèle mes compétences à travers des projets personnels.
+                        Passionné par les systèmes embarqués et le développement web. J'aime
+                        apprendre de nouvelles technologies et les appliquer dans des projets concrets.
+                        Mon objectif est de contribuer à des projets innovants et de continuer à progresser dans
+                        mon domaine.
+                    </p>
+
+                    <p>
+                        Je suis à la recherche d'un stage pour mettre en pratique mes compétences
+                        et acquérir de l'expérience dans le domaine du développement web et des systèmes embarqués.
+                        Je suis motivé, curieux et prêt à relever de nouveaux défis.
+                    </p>
+                    <p>
+                        Je suis convaincu que mon enthousiasme et ma capacité à apprendre rapidement
+                        seront des atouts précieux pour votre équipe. Je suis impatient de contribuer à des projets
+                        passionnants et d'apprendre aux côtés de professionnels expérimentés.
+                    </p>
+                </article>
+
+                <article id="experiences">
+                    <h2> Expériences </h2>
+                    <h3>Projets personnels sur GitHub</h3>
+                    <p>
+                        Pas d'expérience professionnelle formelle, mais plusieurs projets réalisés :
+                    </p>
+                    <ul>
+                        <li>Site CV en ligne (HTML, CSS, animations)</li>
+                        <li>Calcul de température (JavaScript)</li>
+                        <li>Projet Permis - quiz interactif</li>
+                        <li>Site de citations bibliques</li>
+                        <li>Projets Raspberry Pi (Python)</li>
+                        <li>Projets Arduino (C++)</li>
+                    </ul>
+                    <p>
+                        Ces projets démontrent mes compétences en développement web et embarqué.
+                    </p>
+
+                </article>
+
+                <article id="formation">
+                    <h2>Formation</h2>
+                    <ul>
+                        <li>
+                            <strong>Bachelier en Technologie de l’Informatique</strong> (1ère année)<br>
+                            Haute École EPHEC, Belgique — Depuis 2024
+                        </li>
+                        <li>
+                            <strong>Certificat TechnoFutur</strong> (en parallèle du bachelier)<br>
+                            Formation en ligne : HTML, CSS, JavaScript, référencement web, création de sites web
+                        </li>
+                        <li>
+                            <strong>Diplôme d’État en Électronique</strong> (équivalent Bac)<br>
+                            Institut Technique Professionnel de La Gombe, Kinshasa, RDC
+                        </li>
+                    </ul>
+                </article>
+
+            </section>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <address>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+            </svg>
+            404 Rue de la Programmation, Quartier des Octets, 1337 Cyberville, Technoland, Codeurope.
+        </address>
+    </footer>
+</body>
+
+</html>
