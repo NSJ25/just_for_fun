@@ -1,0 +1,119 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #222222;
+    height: 110px;
+    width: 100%;
+    border-radius: 15px;
+    margin: 0;
+    position: fixed;
+    left: 1px;
+    right: 1px;
+    top: 0;
+    margin-bottom: 100px;
+    background-color: #f7ecde;
+}
+
+main {
+    margin-top: 120px;
+}
+
+nav {
+    margin: 30px;
+}
+
+select {
+    margin: 20px;
+    color: #ec8703;
+    background-color: #f7ecde;
+    border: 2px solid #720101;
+    border-radius: 3px;
+    height: 50;
+    width: 160px;
+}
+
+section {
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(255, 140, 0, 0.3);
+    padding: 20px;
+
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #ec8703;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    color: #ec8703;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    color: #ec8703;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+label {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 18px;
+    color: #ec8703;
+}
+
+input {
+    border: 2px solid #340000;
+    border-radius: 5px;
+    height: 25px;
+    width: 180px;
+    color: #ec8703;
+}
+
+button {
+    color: #ec8703;
+    background-color: #ffffff;
+    border: 2px solid #720101;
+    border-radius: 7px;
+    width: 150px;
+    height: 35px;
+
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: #ec8703;
+}
+
+button:active {
+    box-shadow: 2px 4px 8px rgba(126, 87, 39, 0.3);
+    opacity: 0.7;
+}
+
+#commentaires>button {
+    margin: 50px;
+}
+
+textarea {
+    margin: 10px;
+    border: 2px solid #ec8703;
+    color: #ec8703;
+    background-color: #ffffff;
+}

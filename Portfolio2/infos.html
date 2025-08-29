@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> </title>
+    <link rel="stylesheet" href="css/info.css">
+    <script src="js/info.js"></script>
+</head>
+
+<body onload="init()">
+    <header>
+        <h1>Portfolio</h1>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Accueil</a> </li>
+                <li id="gauche"> <a href="projets.html">Mes projets</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="infos">
+            <h2>Presentation</h2>
+
+            <p>
+                Passionné par l'informatique sous toutes ses formes, je m'intéresse autant aux aspects techniques
+                qu’aux domaines plus créatifs du numérique. Développement, cybersécurité, systèmes, intelligence
+                artificielle… chaque branche m'attire pour ce qu'elle permet de comprendre, de construire,
+                de remettre en question. J’aime assembler des lignes de code comme d’autres composent des mélodies —
+                avec précision, curiosité et parfois un peu d’intuition.
+            </p>
+
+            <p>
+                J’ai toujours été une personne plutôt discrète. Je me sens bien dans mon coin, devant un écran,
+                à taper quelques lignes de code ou à me taper quelques barres, à bidouiller un script ou réfléchir à une structure.
+                C’est dans ce calme que je me retrouve le mieux, que je suis le plus créatif.
+            </p>
+
+            <p>
+                Pendant un temps, j’écrivais. Des textes, des idées, parfois de la musique. C’était une forme
+                d’expression personnelle, une manière d’exister autrement. Même si je n’écris plus aujourd’hui,
+                cet élan créatif me suit encore. Il influence ma manière de penser, de concevoir des projets,
+                de donner du sens à ce que je fais.
+            </p>
+
+            <p>
+                Côté inspirations, les animés ont une grande place dans mon univers.
+                <em onclick="afficherPopup('hxh')">Hunter x Hunter</em>, <em onclick="afficherPopup('naruto')">Naruto</em>,
+                <em onclick="afficherPopup('fMetal')">Fullmetal Alchemist: Brotherhood</em>…
+                Ce sont plus que des œuvres : ce sont des récits puissants, souvent philosophiques,
+                qui m’ont marqué durablement. Ils posent des questions profondes sur la justice, le pouvoir,
+                la douleur, le sacrifice — des thèmes que je retrouve parfois dans la vraie vie.
+            </p>
+
+            <dialog id="hxh">
+                 <h2>Hunter x Hunter — Mon animé préféré</h2>
+
+                <p>
+                    <strong>Kirua Zoldyck</strong><br>
+                    <em>« Je suis ton ami, pas ton outil. »</em><br>
+                    Un tueur né, mais avec un cœur immense. Son évolution, sa loyauté et sa relation 
+                    avec Gon sont magnifiques.
+                </p>
+
+                <p>
+                    <strong>Hisoka</strong><br>
+                    <em>« La beauté réside dans la tension. »</em><br>
+                    Mystérieux, dangereux et fascinant. Un personnage imprévisible qu'on ne peut pas 
+                    ignorer.
+                </p>
+
+                <p>
+                    <strong>Leolio (Lyo)</strong><br>
+                    <em>« J’suis pas juste un gars drôle, j’veux devenir médecin ! »</em><br>
+                    Attachant, comique, mais aussi plein de cœur. Sa sincérité fait de lui un vrai 
+                    héros du quotidien.
+                </p>
+
+                <p>
+                    <strong>Meruem</strong><br>
+                    <em>« Quel est le but de la force, si ce n’est pour protéger ? »</em><br>
+                    Pour moi, c’est le plus grand antagoniste de tous les animés. Sa transformation, 
+                    son humanité, son lien avec Komugi… une écriture exceptionnelle.
+                </p>
+                <button onclick="fermerPopup('hxh')">Fermer</button>
+            </dialog>
+
+            <dialog id="naruto">
+                <h2>Mon avis sur Naruto</h2>
+                <p>
+                    <strong>Naruto</strong> est un anime qui m’a profondément marqué. C’est bien 
+                    plus qu’un simple shōnen rempli de combats : c’est une œuvre riche en émotions, 
+                    en réflexions sur la vie, la solitude, la douleur, la guerre et le pardon.
+                </p>
+
+                <p>
+                    Mon personnage préféré de tout l’univers Naruto, c’est sans aucun doute
+                    <strong>Obito Uchiwa</strong>. Il a une histoire tragique, un passé très 
+                    lourd, et une profondeur d’âme qui me touche énormément. Sa vision du monde, 
+                    sa souffrance, ses choix… tout ça fait de lui un personnage extrêmement complexe
+                    et humain.
+                </p>
+
+                <p>
+                    J’aime aussi beaucoup <strong>Shino Aburame</strong>. Il est souvent 
+                    sous-estimé, discret, mais intelligent, puissant, loyal et toujours 
+                    calme. Il a un style unique et une présence silencieuse que j’apprécie 
+                    vraiment.
+                </p>
+                <p>
+                    <strong>Pain (Nagato)</strong>
+                    <em>« La douleur est la voie vers la paix. »</em>
+                    <br> Un antagoniste puissant et marquant, qui veut faire comprendre le monde à 
+                    travers la souffrance.
+                </p>
+
+                <p class="red">
+                    En revanche, je n’aime pas du tout <strong>Boruto</strong>. Je trouve 
+                    que cet anime a gâché l’esprit et la profondeur de Naruto. L’ambiance 
+                    n’est plus la même, les personnages sont creux, et la suite manque 
+                    selon moi de respect à l’héritage du manga original.
+                </p>
+                <button onclick="fermerPopup('naruto')">Fermer</button>
+            </dialog>
+
+            <dialog id="fMetal">
+                <h2>Fullmetal Alchemist: Brotherhood</h2>
+
+                <p>
+                    <strong>Alphonse Elric</strong><br>
+                    <em>« On ne peut pas recevoir sans donner quelque chose en retour. C’est 
+                    le principe de l’échange équivalent. »</em><br>
+                    Un frère au grand cœur, enfermé dans une armure mais plus humain que beaucoup. 
+                    sagesse, sa douceur et sa loyauté en font un personnage inoubliable.
+                </p>
+
+                <p>
+                    <strong>Maes Hughes</strong><br>
+                    Un père aimant, drôle et loyal. Sa mort m’a profondément marqué. C’est un personnage qu’on n’oublie pas.
+                </p>
+
+                <p>
+                    <strong>Roy Mustang</strong><br>
+                    <em>« Je vais tous les brûler. »</em><br>
+                    Le colonel de feu. Calme, stratégique et redoutable. Son désir de justice pour Hughes est puissant.
+                </p>
+
+                <p class="red">
+                    ❌ <strong>Shou Tucker</strong> est le personnage que je déteste le plus de tous les animés. Ce qu’il a fait est impardonnable.
+                </p>
+                <button onclick="fermerPopup('fMetal')">Fermer</button>
+            </dialog>
+
+            <p>
+                Je suis aussi attiré par les citations, celles qui frappent fort et restent en tête.
+                comme par exemple :
+            </p>
+
+            <blockquote onclick="afficherPopup('obito')">
+                « Je ne veux pas de la justice. Je veux l’injustice d’une manière équitable. »
+            </blockquote>
+
+            <dialog id="obito">
+                <p>
+                    <strong>Obito Uchiwa</strong> — mon personnage préféré dans <em>Naruto</em>.
+                </p>
+                <p>
+                    Cette citation vient de lui. C’est un personnage que j’apprécie énormément 
+                    parce qu’il a une histoire vraiment triste et une profondeur d’âme rare.
+                </p>
+                <p>
+                    Il représente bien le combat intérieur entre la douleur, la justice et 
+                    les choix qu'on fait dans la vie.
+                </p>
+                <button onclick="fermerPopup('obito')">Fermer</button>
+            </dialog>
+
+            <blockquote onclick="afficherPopup('god')">
+                « Dieu ne ment jamais. »
+            </blockquote>
+
+            <dialog id="god">
+                <p>
+                    Cette citation exprime une vérité profonde : <strong>Dieu est toujours 
+                    fidèle à sa parole</strong>. Il n’y a ni mensonge ni erreur en Lui.
+                </p>
+                <p>
+                    Pour moi, cette phrase représente la confiance absolue que l’on peut 
+                    avoir en Dieu, même dans les moments les plus difficiles.
+                </p>
+                <button onclick="fermerPopup('god')">Fermer</button>
+            </dialog>
+
+            <blockquote onclick="afficherPopup('proverbe')">
+                « Le commencement de la sagesse, c’est la crainte de l’Éternel. »
+            </blockquote>
+
+            <dialog id="proverbe">
+                <p>
+                    <strong>Proverbes 9:10</strong>
+                </p>
+                <p>
+                    Ce verset nous rappelle que la vraie sagesse commence par le respect 
+                    et la révérence envers Dieu. C’est un fondement spirituel pour bien 
+                    vivre et bien comprendre le monde.
+                </p>
+                <button onclick="fermerPopup('proverbe')">Fermer</button>
+            </dialog>
+
+            <blockquote onclick="afficherPopup('intelligence')">
+                « L’intelligence est la plus grande cause de malheur dans le monde. »
+            </blockquote>
+
+            <dialog id="intelligence">
+                <p>
+                    <strong>Citation</strong>
+                </p>
+                <p>
+                    Cette phrase met en lumière une idée troublante : parfois, 
+                    trop réfléchir, trop analyser, ou trop comprendre peut devenir 
+                    une source de souffrance. L’intelligence peut nous éloigner de 
+                    la paix simple qu’apportent l’innocence ou la foi.
+                </p>
+                <button onclick="fermerPopup('intelligence')">Fermer</button>
+            </dialog>
+
+            <p>
+                Des pensées comme celles-ci me poussent à questionner les apparences, à creuser plus loin.
+            </p>
+
+            <p>
+                Aujourd’hui, ce portfolio est mon espace d’expression. Un endroit pour partager ce que je crée,
+                ce qui m’inspire, ce qui me fait vibrer. C’est un mélange d’informatique, de culture,
+                d’introspection. Rien de figé, rien de parfaitement lisse — mais toujours sincère.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Tu peux me contacter via :</p>
+            <p>📧 Email : <a href="mailto:theghostwriter25@gmail.com">theghostwriter25@gmail.com</a></p>
+            <p>💻 GitHub : <a href="https://github.com/NSJ25" target="_blank">github.com/NSJ25</a></p>
+            <p>💬 Discord : the_ghostwriter_25</p>
+        </section>
+    </main>
+</body>
+
+</html>

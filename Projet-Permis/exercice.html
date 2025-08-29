@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <title>EXERCICES PERMIS DE CONDUIRE</title>
+        <meta charset="UTF-8">
+        <link href="css/exercice.css" type="text/css" rel="stylesheet">
+    <!-- Autres styles après -->
+    </head>
+
+<body>
+        <header>
+            <h1>Quiz Interactif</h1>
+            <div class="progress-container" role="progressbar" aria-label="Progression du quiz"> 
+            <div class="progress-bar" id="progressBar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Progretion : 0%</div>
+            <div class="success-rate" id="successRate" aria-label="Taux de réussite">Bonnes reponses 0%</div>
+            </div>
+
+        </header>
+
+        <section class="sec">
+            <h2 class="titre">QUESTIONS PERMIS</h2>
+                <div id="Question1" class="Question">
+            <p class="para">Que signifie un panneau rond à bord rouge avec une voiture noire et une voiture rouge côte à
+                côte ?</p>
+            <img src="img/DALL·E 2025-01-28 19.48.36.webp" alt="Panneau de signalisation routière" width="300"
+                height="200" loading="lazy">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+                        <input type="radio" name="choix1" id="A1" value="option1" class="faux" required>
+                        <label for="A1">Stationnement interdit</label>
+                        <br>
+                        <input type="radio" name="choix1" id="A2" value="option2" class="vrai" required>
+                        <label FOR="A2">Dépassement interdit</label>
+                        <br>
+                        <input type="radio" name="choix1" id="A3" value="option3" class="faux" required>
+                        <label for="A3">Circulation interdite aux véhicules</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(1)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback1"></div>
+                    <button type="button" id="nextBouton1" class="next-Bouton" onclick="prochaineQuestion(1)">Suivant</button>
+                </div>
+
+                <div id="Question2" class="Question">
+            <p class="para">Que signifie un panneau triangulaire à bord rouge avec un point d'exclamation au centre ?
+            </p>
+                    <img src="img/DALL·E 2025-01-28 19.52.20.webp" alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+                        <input type="radio" name="choix2" id="B1" value="option1" class="vrai" required>
+                        <label for="B1">Danger général</label>
+                        <br>
+                        <input type="radio" name="choix2" id="B2" value="option2" class="faux" required>
+                        <label for="B2">Fin d'une interdiction</label>
+                        <br>
+                        <input type="radio" name="choix2" id="B3" value="option3" class="faux " required>
+                <label for="B3">Obligation de s'arrêter</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(2)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback2"></div>
+                    <button type="button" id="nextBouton2" class="next-Bouton" onclick="prochaineQuestion(2)">Suivant</button>
+                </div>
+
+                <div id="Question3" class="Question">
+                    <p class="para">Quelle signification a un panneau bleu carré avec la lettre "P" blanche ?</p>
+                    <img src="img/DALL·E 2025-01-28 19.54.38.webp" alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix3" id="C1" value="option1" class="vrai" required>
+                        <label for="C1">Parking autorisé</label>
+                        <br>
+                        <input type="radio" name="choix3" id="C2" value="option2" class="faux" required>
+                        <label for="C2">Parking interdit</label>
+                        <br>
+                        <input type="radio" name="choix3" id="C3" value="option2" class="faux" required>
+                        <label for="C3">Arrêt obligatoire</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(3)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback3"></div>
+                    <button type="button" id="nextBouton3" class="next-Bouton" onclick="prochaineQuestion(3)">Suivant</button>
+                </div>
+
+                <div id="Question4" class="Question">
+                    <p class="para">Quel panneau indique une priorité par rapport aux conducteurs venant en sens inverse ?</p>
+            <img src="img/Panneau_priorite.png" alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix4" id="D1" value="option1" class="faux" required>
+                        <label for="D1"> Un panneau carré bleu avec une flèche blanche vers le haut</label>
+                        <br>
+                        <input type="radio" name="choix4" id="D2" value="option2" class="vrai" required>
+                        <label for="D2">Un panneau circulaire rouge avec une flèche noire et une flèche rouge</label>
+                        <br>
+                        <input type="radio" name="choix4" id="D3" value="option3" class="faux" required>
+                        <label for="D3">Un panneau triangulaire inversé
+                        </label>
+                        <br>
+                        <button type="button" onclick="checkReponse(4)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback4"></div>
+                    <button type="button" id="nextBouton4" class="next-Bouton" onclick="prochaineQuestion(4)">Suivant</button>
+                </div>
+
+                <div id="Question5" class="Question">
+                    <p class="para">Dans quelle situation devez-vous céder le passage à droite ?</p>
+            <img src="img/DALL·E 2025-02-02 12.02.49.webp" alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix5" id="E1" value="option1" class="faux" required>
+                        <label for="E1">Lorsque vous êtes sur une route prioritaire</label>
+                        <br>
+                        <input type="radio" name="choix5" id="E2" value="option2" class="faux" required>
+                        <label for="E2">Toujours, sauf indication contraire</label>
+                        <br>
+                        <input type="radio" name="choix5" id="E3" value="option3" class="vrai" required>
+                <label for="E3">Tout véhicule venant de votre droite si aucune autre signalisation ne l'indique</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(5)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback5"></div>
+                    <button type="button" id="nextBouton5" class="next-Bouton" onclick="prochaineQuestion(5)">Suivant</button>
+                </div>
+
+                <div id="Question6" class="Question">
+                    <p class="para">Que devez-vous faire lorsqu'un feu tricolore est orange fixe ?</p>
+            <img src="img/DALL·E 2025-02-02 12.08.12.webp" alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix6" id="F1" value="option1" class="vrai" required>
+                <label for="F1">S'arrêter si la sécurité le permet</label>
+                        <br>
+                        <input type="radio" name="choix6" id="F2" value="option2" class="faux" required>
+                        <label for="F2">Accélérer si personne ne vient en face</label>
+                        <br>
+                        <input type="radio" name="choix6" id="F3" value="option3" class="faux" required>
+                        <label for="F3">Continuer sans ralentir</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(6)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback6"></div>
+                    <button type="button" id="nextBouton6" class="next-Bouton" onclick="prochaineQuestion(6)">Suivant</button>
+                </div>
+
+                <div id="Question7" class="Question">
+                    <p class="para">En cas d'absence de signalisation à une intersection, qui a la priorité ?</p>
+            <img src="img/Designer.jpeg" alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix7" id="G1" value="option1" class="vrai" required>
+                        <label for="G1">Le véhicule venant de droite </label>
+                        <br>
+                        <input type="radio" name="choix7" id="G2" value="option2" class="faux" required>
+                        <label for="G2">Le véhicule le plus rapide</label>
+                        <br>
+                        <input type="radio" name="choix7" id="G3" value="option3" class="faux" required>
+                        <label for="G3">Le véhicule le plus lourd</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(7)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback7"></div>
+                    <button type="button" id="nextBouton7" class="next-Bouton" onclick="prochaineQuestion(7)">Suivant</button>
+                </div>
+
+                <div id="Question8" class="Question">
+                    <p class="para">Lorsqu'un tramway s'arrête pour laisser monter des passagers, que devez-vous faire ?</p>
+            <img src="img/Designer1.jpeg" alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix8" id="H1" value="option1" class="faux" required>
+                        <label for="H1">Le dépasser prudemment</label>
+                        <br>
+                        <input type="radio" name="choix8" id="H2" value="option2" class="vrai" required>
+                        <label for="H2">Vous arrêter et attendre</label>
+                        <br>
+                        <input type="radio" name="choix8" id="H3" value="option3" class="faux" required>
+                        <label for="H3">Klaxonner pour signaler votre passage</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(8)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback8"></div>
+                    <button type="button" id="nextBouton8" class="next-Bouton" onclick="prochaineQuestion(8)">Suivant</button>
+                </div>
+
+                <div id="Question9" class="Question">
+                    <p class="para">Quelle est la vitesse maximale autorisée en agglomération ?</p>
+            <img src="img/Designer3.jpeg" alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix9" id="I1" value="option1" class="vrai" required>
+                        <label for="I1">50 km/h</label>
+                        <br>
+                        <input type="radio" name="choix9" id="I2" value="option2" class="faux" required>
+                        <label for="I2">70 km/h</label>
+                        <br>
+                        <input type="radio" name="choix9" id="I3" value="option3" class="faux" required>
+                        <label for="I3">90 km/h</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(9)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback9"></div>
+                    <button type="button" id="nextBouton9" class="next-Bouton" onclick="prochaineQuestion(9)">Suivant</button>
+                </div>
+
+                <div id="Question10" class="Question">
+            <p class="para">Quelle est la vitesse maximale sur autoroute pour un conducteur novice (moins de 2 ans de
+                permis) ?</p>
+            <img src="img/Designer3.jpeg" alt="Description de l'image">
+                    <fieldset>
+
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix10" id="J1" value="option1" class="faux" required>
+                        <label for="J1">90 km/h</label>
+                        <br>
+                        <input type="radio" name="choix10" id="J2" value="option2" class="vrai" required>
+                        <label for="J2">100 km/h</label>
+                        <br>
+                        <input type="radio" name="choix10" id="J3" value="option3" class="faux" required>
+                        <label for="J3">120 km/h</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(10)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback10"></div>
+                    <button type="button" id="nextBouton10" class="next-Bouton" onclick="prochaineQuestion(10)">Suivant</button>
+                </div>
+
+                <div id="Question11" class="Question">
+                    <p class="para">Quelle est la vitesse maximale en dehors des agglomérations sur une route à deux voies ?</p>
+            <img src="img/Designer3.jpeg" alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix11" id="K1" value="option1" class="faux" required>
+                        <label for="K1">70 km/h</label>
+                        <br>
+                        <input type="radio" name="choix11" id="K2" value="option2" class="vrai" required>
+                        <label for="K2">90 km/h</label>
+                        <br>
+                        <input type="radio" name="choix11" id="K3" value="option3" class="faux" required>
+                        <label for="K3">120 km/h</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(11)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback11"></div>
+                    <button type="button" id="nextBouton11" class="next-Bouton" onclick="prochaineQuestion(11)">Suivant</button>
+                </div>
+
+                <div id="Question12" class="Question">
+                    <p class="para">Quelle est la distance de sécurité recommandée sur autoroute à 120 km/h ?</p>
+            <img src="img/Designer4.jpeg" alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix12" id="L1" value="option1" class="faux" required>
+                        <label for="L1">30 mètres</label>
+                        <br>
+                        <input type="radio" name="choix12" id="L2" value="option2" class="faux" required>
+                        <label for="L2">50 mètres</label>
+                        <br>
+                        <input type="radio" name="choix12" id="L3" value="option3" class="vrai" required>
+                        <label for="L3">70 mètres</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(12)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback12"></div>
+                    <button type="button" id="nextBouton12" class="next-Bouton" onclick="prochaineQuestion(12)">Suivant</button>
+                </div>
+
+                <div id="Question13" class="Question">
+                    <p class="para">À quelle distance minimale devez-vous vous arrêter d'un passage à niveau non gardé ?</p>
+            <img src="img/Designer5.jpeg" alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix13" id="M1" value="option1" class="faux" required>
+                        <label for="M1">5 mètres</label>
+                        <br>
+                        <input type="radio" name="choix13" id="M2" value="option2" class="vrai" required>
+                        <label for="M2">10 mètres</label>
+                        <br>
+                        <input type="radio" name="choix13" id="M3" value="option3" class="faux" required>
+                        <label for="M3">15 mètres</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(13)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback13"></div>
+                    <button type="button" id="nextBouton13" class="next-Bouton" onclick="prochaineQuestion(13)">Suivant</button>
+                </div>
+
+                <div id="Question14" class="Question">
+                    <p class="para">Que représente la "règle des deux secondes" ?</p>
+            <img src="img/Designer6.jpeg" alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix14" id="N1" value="option1" class="faux" required>
+                <label for="N1">La durée d'un freinage efficace</label>
+                        <br>
+                        <input type="radio" name="choix14" id="N2" value="option2" class="faux" required>
+                <label for="N2">La distance de réaction</label>
+                        <br>
+                        <input type="radio" name="choix14" id="N3" value="option3" class="vrai" required>
+                        <label for="N3">Le temps minimum entre deux véhicules en mouvement</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(14)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback14"></div>
+                    <button type="button" id="nextBouton14" class="next-Bouton" onclick="prochaineQuestion(14)">Suivant</button>
+                </div>
+
+                <div id="Question15" class="Question">
+            <p class="para">Quel est le taux maximal d'alcool autorisé pour un conducteur expérimenté</p>
+            <img src="img/Designer7.jpeg" alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix15" id="O1" value="option1" class="faux" required>
+                        <label for="O1">0,2 g/L</label>
+                        <br>
+                        <input type="radio" name="choix15" id="O2" value="option2" class="vrai" required>
+                        <label for="O2">0,5 g/L</label>
+                        <br>
+                        <input type="radio" name="choix15" id="O3" value="option3" class="faux" required>
+                        <label for="O3"> 0,8 g/L</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(15)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback15"></div>
+                    <button type="button" id="nextBouton15" class="next-Bouton" onclick="prochaineQuestion(15)">Suivant</button>
+                </div>
+
+                <div id="Question16" class="Question">
+            <p class="para">Quels sont les effets de l'alcool sur la conduite ?</p>
+            <img src="img/Designer8.jpeg" alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+
+                        <input type="radio" name="choix16" id="P1" value="option1" class="faux" required>
+                        <label for="P1">Réduction du temps de réaction</label>
+                        <br>
+                        <input type="radio" name="choix16" id="P2" value="option2" class="faux" required>
+                        <label for="P2">Amélioration de la concentration</label>
+                        <br>
+                        <input type="radio" name="choix16" id="P3" value="option3" class="vrai" required>
+                        <label for="P3">Augmentation du temps de réaction et diminution de la vigilance</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(16)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback16"></div>
+                    <button type="button" id="nextBouton16" class="next-Bouton" onclick="prochaineQuestion(16)">Suivant</button>
+                </div>
+
+                <div id="Question17" class="Question">
+                    <p class="para">Quelle est la sanction pour une alcoolémie supérieure à 0,8 g/L</p>
+            <img src="img/Designer9.jpeg" alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix17" id="Q1" value="option1" class="faux" required>
+                        <label for="Q1">Une simple amende</label>
+                        <br>
+                        <input type="radio" name="choix17" id="Q2" value="option2" class="vrai" required>
+                        <label for="Q2">Un retrait de permis immédiat</label>
+                        <br>
+                        <input type="radio" name="choix17" id="Q3" value="option3" class="faux" required>
+                        <label for="Q3">Un avertissement verbal</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(17)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback17"></div>
+                    <button type="button" id="nextBouton17" class="next-Bouton" onclick="prochaineQuestion(17)">Suivant</button>
+                </div>
+
+
+                <div id="Question18" class="Question">
+                    <p class="para"> Quelle précaution prendre en présence d'enfants près d'un passage piéton ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix18" id="R1" value="option1" class="vrai" required>
+                <label for="R1">Ralentir et se préparer à s'arrêter</label>
+                        <br>
+                        <input type="radio" name="choix18" id="R2" value="option2" class="faux" required>
+                        <label for="R2">Klaxonner pour prévenir de votre présence</label>
+                        <br>
+                        <input type="radio" name="choix18" id="R3" value="option3" class="faux" required>
+                        <label for="R3">Continuer normalement</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(18)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback18"></div>
+                    <button type="button" id="nextBouton18" class="next-Bouton" onclick="prochaineQuestion(18)">Suivant</button>
+                </div>
+
+                <div id="Question19" class="Question">
+            <p class="para">Quelle est la distance latérale minimale à respecter en dépassant un cycliste en
+                agglomération ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix19" id="S1" value="option1" class="faux" required>
+                        <label for="S1">1,5 mètre</label>
+                        <br>
+                        <input type="radio" name="choix19" id="S2" value="option2" class="faux" required>
+                        <label for="S2">50 cm</label>
+                        <br>
+                        <input type="radio" name="choix19" id="S3" value="option3" class="vrai" required>
+                        <label for="S3">1 mètre</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(19)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback19"></div>
+                    <button type="button" id="nextBouton19" class="next-Bouton" onclick="prochaineQuestion(19)">Suivant</button>
+                </div>
+
+                <div id="Question20" class="Question">
+            <p class="para">En présence d'un piéton aveugle avec une canne blanche au bord de la route, vous devez :
+            </p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix20" id="T1" value="option1" class="faux" required>
+                        <label for="T1">Ralentir et klaxonner</label>
+                        <br>
+                        <input type="radio" name="choix20" id="T2" value="option2" class="vrai" required>
+                        <label for="T2">Lui céder la priorité</label>
+                        <br>
+                        <input type="radio" name="choix20" id="T3" value="option3" class="faux" required>
+                        <label for="T3">Continuer votre route normalement</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(20)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback20"></div>
+                    <button type="button" id="nextBouton20" class="next-Bouton" onclick="prochaineQuestion(20)">Suivant</button>
+                </div>
+
+                <div id="Question21" class="Question">
+                    <p class="para">Où est-il interdit de stationner ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix21" id="U1" value="option1" class="vrai" required>
+                        <label for="U1">Sur un passage piéton</label>
+                        <br>
+                        <input type="radio" name="choix21" id="U2" value="option2" class="faux" required>
+                        <label for="U2">Devant une entrée privée avec autorisation</label>
+                        <br>
+                        <input type="radio" name="choix21" id="U3" value="option3" class="faux" required>
+                <label for="U3">À 5 mètres d'un carrefour</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(21)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback21"></div>
+                    <button type="button" id="nextBouton21" class="next-Bouton" onclick="prochaineQuestion(21)">Suivant</button>
+                </div>
+
+                <div id="Question22" class="Question">
+                    <p class="para">Combien de temps pouvez-vous vous arrêter dans une zone de livraison ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix22" id="V1" value="option1" class="faux" required>
+                        <label for="V1">15 minutes</label>
+                        <br>
+                        <input type="radio" name="choix22" id="V2" value="option2" class="faux" required>
+                <label for="V2">Interdiction de s'arrêter</label>
+                        <br>
+                        <input type="radio" name="choix22" id="V3" value="option3" class="faux" required>
+                        <label for="V3">30 minutes</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(22)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback22"></div>
+                    <button type="button" id="nextBouton22" class="next-Bouton" onclick="prochaineQuestion(22)">Suivant</button>
+                </div>
+
+
+                <div id="Question23" class="Question">
+                    <p class="para">Où pouvez-vous stationner dans une rue à sens unique ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix23" id="W1" value="option1" class="vrai" required>
+                        <label for="W1">Des deux côtés si signalisation autorisée</label>
+                        <br>
+                        <input type="radio" name="choix23" id="W2" value="option2" class="faux" required>
+                        <label for="W2">Côté droit uniquement</label>
+                        <br>
+                        <input type="radio" name="choix23" id="W3" value="option3" class="faux" required>
+                        <label for="W3">Côté gauche uniquement</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(23)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback23"></div>
+                    <button type="button" id="nextBouton23" class="next-Bouton" onclick="prochaineQuestion(23)">Suivant</button>
+                </div>
+
+                <div id="Question24" class="Question">
+            <p class="para">Quel équipement est obligatoire à bord d'un véhicule ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix24" id="X1" value="option1" class="faux" required>
+                        <label for="X1">Une trousse de premiers soins</label>
+                        <br>
+                        <input type="radio" name="choix24" id="X2" value="option2" class="faux" required>
+                        <label for="X2">Un extincteur</label>
+                        <br>
+                        <input type="radio" name="choix24" id="X3" value="option3" class="vraix" required>
+                        <label for="X3">Un gilet de sécurité et un triangle de signalisation</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(24)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback24"></div>
+                    <button type="button" id="nextBouton24" class="next-Bouton" onclick="prochaineQuestion(24)">Suivant</button>
+                </div>
+
+                <div id="Question25" class="Question">
+                    <p class="para">Quelle est la pression idéale des pneus avant un long trajet ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix25" id="Y1" value="option1" class="faux" required>
+                        <label for="Y1">Toujours au maximum recommandé</label>
+                        <br>
+                        <input type="radio" name="choix25" id="Y2" value="option2" class="vrai" required>
+                        <label for="Y2">Celle indiquée dans le manuel du véhicule</label>
+                        <br>
+                        <input type="radio" name="choix25" id="Y3" value="option3" class="faux" required>
+                        <label for="Y3">La même pour tous les véhicules</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(25)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback25"></div>
+                    <button type="button" id="nextBouton25" class="next-Bouton" onclick="prochaineQuestion(25)">Suivant</button>
+                </div>
+
+                <div id="Question26" class="Question">
+                    <p class="para">Quand devez-vous allumer vos feux de brouillard arrière ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix26" id="Z1" value="option1" class="vrai" required>
+                <label for="Z1">Lors d'un brouillard dense ou de fortes chutes de neige</label>
+                        <br>
+                        <input type="radio" name="choix26" id="Z2" value="option2" class="faux" required>
+                        <label for="Z2">À tout moment sur autoroute</label>
+                        <br>
+                        <input type="radio" name="choix26" id="Z3" value="option3" class="faux" required>
+                <label for="Z3">Dès qu'il pleut légèrement</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(26)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback26"></div>
+                    <button type="button" id="nextBouton26" class="next-Bouton" onclick="prochaineQuestion(26)">Suivant</button>
+                </div>
+
+                <div id="Question27" class="Question">
+                    <p class="para">Quelle est la première action à entreprendre en cas d'accident avec blessés ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix27" id="A4" value="option1" class="faux" required>
+                        <label for="A4">Déplacer les véhicules pour libérer la chaussée</label>
+                        <br>
+                        <input type="radio" name="choix27" id="A5" value="option2" class="vrai" required>
+                        <label for="A5">Signaler l'accident et sécuriser la zone</label>
+                        <br>
+                        <input type="radio" name="choix27" id="A6" value="option3" class="faux" required>
+                        <label for="A6">Appeler les secours</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(27)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback27"></div>
+                    <button type="button" id="nextBouton27" class="next-Bouton" onclick="prochaineQuestion(27)">Suivant</button>
+                </div>
+
+                <div id="Question28" class="Question">
+            <p class="para">Que devez-vous faire si vous êtes impliqué dans un accident sans blessé mais avec des dégâts
+                matériels ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix28" id="B4" value="option1" class="faux" required>
+                        <label for="B4">Quitter les lieux immédiatement</label>
+                        <br>
+                        <input type="radio" name="choix28" id="B5" value="option2" class="faux" required>
+                        <label for="B5">Attendre la police sans rien faire</label>
+                        <br>
+                        <input type="radio" name="choix28" id="B6" value="option3" class="vrai" required>
+                        <label for="B6">Échanger vos coordonnées avec l'autre conducteur et remplir un constat amiable</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(28)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback28"></div>
+                    <button type="button" id="nextBouton28" class="next-Bouton" onclick="prochaineQuestion(28)">Suivant</button>
+                </div>
+
+                <div id="Question29" class="Question">
+                    <p class="para">Quelle est la meilleure façon de réduire la consommation de carburant ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix29" id="C4" value="option1" class="vrai" required>
+                        <label for="C4">Conduire à une vitesse constante et modérée</label>
+                        <br>
+                        <input type="radio" name="choix29" id="C5" value="option2" class="faux" required>
+                        <label for="C5">Accélérer fortement puis relâcher l'accélérateur</label>
+                        <br>
+                        <input type="radio" name="choix29" id="C6" value="option3" class="faux" required>
+                        <label for="C6">Utiliser fréquemment le frein moteur</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(29)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback29"></div>
+                    <button type="button" id="nextBouton29" class="next-Bouton" onclick="prochaineQuestion(29)">Suivant</button>
+                </div>
+
+                <div id="Question30" class="Question">
+                    <p class="para">Quelle pression des pneus est recommandée pour une consommation optimale de carburant ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix30" id="D4" value="option1" class="faux" required>
+                        <label for="D4">Inférieure à celle recommandée par le constructeur</label>
+                        <br>
+                        <input type="radio" name="choix30" id="D5" value="option2" class="vrai" required>
+                        <label for="D5">Exactement celle recommandée par le constructeur</label>
+                        <br>
+                        <input type="radio" name="choix30" id="D6" value="option3" class="faux" required>
+                        <label for="D6">Supérieure à celle recommandée par le constructeur</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(30)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback30"></div>
+                    <button type="button" id="nextBouton30" class="next-Bouton" onclick="prochaineQuestion(30)">Suivant</button>
+                </div>
+
+                <div id="Question31" class="Question">
+                    <p class="para">Comment devez-vous adapter votre conduite en cas de pluie ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix31" id="E4" value="option1" class="faux" required>
+                        <label for="E4">Augmenter votre vitesse pour passer rapidement les zones glissantes</label>
+                        <br>
+                        <input type="radio" name="choix31" id="E5" value="option2" class="vrai" required>
+                        <label for="E5">Réduire votre vitesse et augmenter la distance de sécurité</label>
+                        <br>
+                        <input type="radio" name="choix31" id="E6" value="option3" class="faux" required>
+                        <label for="E6">Utiliser uniquement les feux de position</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(31)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback31"></div>
+                    <button type="button" id="nextBouton31" class="next-Bouton" onclick="prochaineQuestion(31)">Suivant</button>
+                </div>
+
+
+                <div id="Question32" class="Question">
+                    <p class="para">Que devez-vous faire en cas de brouillard épais ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix32" id="F4" value="option1" class="faux" required>
+                        <label for="F4">Utiliser les feux de route</label>
+                        <br>
+                        <input type="radio" name="choix32" id="F5" value="option2" class="vrai" required>
+                        <label for="F5">Utiliser les feux de brouillard avant et arrière</label>
+                        <br>
+                        <input type="radio" name="choix32" id="F6" value="option3" class="faux" required>
+                        <label for="F6">Rouler avec les feux de croisement uniquement</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(32)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback32"></div>
+                    <button type="button" id="nextBouton32" class="next-Bouton" onclick="prochaineQuestion(32)">Suivant</button>
+                </div>
+
+                <div id="Question33" class="Question">
+            <p class="para">Quelle est la sanction pour l'utilisation d'un téléphone portable tenu en main en conduisant
+                ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix33" id="G4" value="option1" class="vrai" required>
+                        <label for="G4">Une amende et une perte de points sur le permis</label>
+                        <br>
+                        <input type="radio" name="choix33" id="G5" value="option2" class="faux" required>
+                        <label for="G5">Un avertissement verbal</label>
+                        <br>
+                        <input type="radio" name="choix33" id="G6" value="option3" class="faux" required>
+                        <label for="G6">Aucune sanction</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(33)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback33"></div>
+                    <button type="button" id="nextBouton33" class="next-Bouton" onclick="prochaineQuestion(33)">Suivant</button>
+                </div>
+
+
+                <div id="Question34" class="Question">
+                    <p class="para">Que risquez-vous en cas de non-respect d'un feu rouge ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix34" id="H4" value="option1" class="faux" required>
+                        <label for="H4">Une simple amende</label>
+                        <br>
+                        <input type="radio" name="choix34" id="H5" value="option2" class="vrai" required>
+                        <label for="5">Une amende et une suspension du permis</label>
+                        <br>
+                        <input type="radio" name="choix34" id="H6" value="option3" class="faux" required>
+                        <label for="H6">Un avertissement sans frais</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(34)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback34"></div>
+                    <button type="button" id="nextBouton34" class="next-Bouton" onclick="prochaineQuestion(34)">Suivant</button>
+                </div>
+
+                <div id="Question35" class="Question">
+            <p class="para">Que devez-vous faire à l'approche d'un véhicule prioritaire en intervention (sirène et
+                gyrophare allumés) ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix35" id="I4" value="option1" class="faux" required>
+                        <label for="I4">Continuer votre route sans changer de comportement</label>
+                        <br>
+                        <input type="radio" name="choix35" id="I5" value="option2" class="faux" required>
+                        <label for="I5">Accélérer pour ne pas le gêner</label>
+                        <br>
+                        <input type="radio" name="choix35" id="I6" value="option3" class="vrai" required>
+                        <label for="I6">Céder le passage en ralentissant et, si nécessaire, en vous arrêtant</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(35)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback35"></div>
+                    <button type="button" id="nextBouton35" class="next-Bouton" onclick="prochaineQuestion(35)">Suivant</button>
+                </div>
+
+                <div id="Question36" class="Question">
+            <p class="para">Est-il permis de suivre un véhicule prioritaire en intervention pour profiter du passage
+                dégagé ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix36" id="J4" value="option1" class="faux" required>
+                        <label for="J4">Oui, si vous ne le gênez pas</label>
+                        <br>
+                        <input type="radio" name="choix36" id="J5" value="option2" class="vrai" required>
+                        <label for="J5">Non, c'est interdit et dangereux</label>
+                        <br>
+                        <input type="radio" name="choix36" id="J6" value="option3" class="faux" required>
+                        <label for="J6">Oui, mais uniquement en ville</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(36)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback36"></div>
+                    <button type="button" id="nextBouton36" class="next-Bouton" onclick="prochaineQuestion(36)">Suivant</button>
+                </div>
+
+                <div id="Question37" class="Question">
+                    <p class="para">Quelle est la charge maximale autorisée sur le toit d'une voiture ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix37" id="K4" value="option1" class="faux" required>
+                        <label for="K4">50 kg</label>
+                        <br>
+                        <input type="radio" name="choix37" id="K5" value="option2" class="faux" required>
+                        <label for="K5">75 kg</label>
+                        <br>
+                        <input type="radio" name="choix37" id="K6" value="option3" class="vrai" required>
+                        <label for="K6">Cela dépend des spécifications du constructeur du véhicule</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(37)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback37"></div>
+                    <button type="button" id="nextBouton37" class="next-Bouton" onclick="prochaineQuestion(37)">Suivant</button>
+                </div>
+
+                <div id="Question38" class="Question">
+                    <p class="para">Comment devez-vous répartir le chargement dans votre véhicule ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix38" id="L4" value="option1" class="faux" required>
+                        <label for="L4">Placer les objets lourds en hauteur</label>
+                        <br>
+                        <input type="radio" name="choix38" id="L5" value="option2" class="vrai" required>
+                        <label for="L5">Répartir uniformément le poids et sécuriser les objets lourds au bas du coffre </label>
+                        <br>
+                        <input type="radio" name="choix38" id="L6" value="option3" class="faux" required>
+                        <label for="L6"> Mettre tous les objets à l'arrière du véhicule</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(38)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback38"></div>
+                    <button type="button" id="nextBouton38" class="next-Bouton" onclick="prochaineQuestion(38)">Suivant</button>
+                </div>
+
+                <div id="Question39" class="Question">
+                    <p class="para">Quels documents devez-vous toujours avoir avec vous lorsque vous conduisez ?</p>
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix39" id="M4" value="option1" class="vrai" required>
+                <label for="M4">Permis de conduire, carte grise (certificat d'immatriculation) et attestation
+                    d'assurance</label>
+                        <br>
+                        <input type="radio" name="choix39" id="M5" value="option2" class="faux" required>
+                        <label for="M5">Carte d'identité uniquement</label>
+                        <br>
+                        <input type="radio" name="choix39" id="M6" value="option3" class="faux" required>
+                        <label for="M6">Manuel du véhicule</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(39)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback39"></div>
+                    <button type="button" id="nextBouton39" class="next-Bouton" onclick="prochaineQuestion(39)">Suivant</button>
+                </div>
+
+                <div id="Question40" class="Question">
+            <p class="para">En cas de contrôle routier, que risquez-vous si vous ne pouvez pas présenter votre permis de
+                conduire ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix40" id="N4" value="option1" class="faux" required>
+                        <label for="N4">Une simple remarque</label>
+                        <br>
+                        <input type="radio" name="choix40" id="N5" value="option2" class="vrai" required>
+                        <label for="N5">Une amende et une possible immobilisation du véhicule</label>
+                        <br>
+                        <input type="radio" name="choix40" id="N6" value="option3" class="faux" required>
+                        <label for="N6">Rien, si vous le présentez plus tard au commissariat</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(40)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback40"></div>
+                    <button type="button" id="nextBouton40" class="next-Bouton" onclick="prochaineQuestion(40)">Suivant</button>
+                </div>
+
+                <div id="Question41" class="Question">
+                    <p class="para">Quels feux devez-vous utiliser en agglomération bien éclairée la nuit ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix41" id="O4" value="option1" class="faux" required>
+                        <label for="O4">Feux de route</label>
+                        <br>
+                        <input type="radio" name="choix41" id="O5" value="option2" class="faux" required>
+                        <label for="O5">Feux de brouillard</label>
+                        <br>
+                        <input type="radio" name="choix41" id="O6" value="option3" class="vrai" required>
+                        <label for="O6">Feux de croisement</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(41)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback41"></div>
+                    <button type="button" id="nextBouton41" class="next-Bouton" onclick="prochaineQuestion(41)">Suivant</button>
+                </div>
+
+                <div id="Question42" class="Question">
+                    <p class="para">Quand devez-vous passer des feux de route aux feux de croisement ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix42" id="P4" value="option1" class="vrai" required>
+                        <label for="P4">Lorsqu'un véhicule arrive en sens inverse</label>
+                        <br>
+                        <input type="radio" name="choix42" id="P5" value="option2" class="faux" required>
+                        <label for="P5">Uniquement en agglomération</label>
+                        <br>
+                        <input type="radio" name="choix42" id="P6" value="option3" class="faux" required>
+                        <label for="P6">Jamais, sauf en cas de brouillard</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(42)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback42"></div>
+                    <button type="button" id="nextBouton42" class="next-Bouton" onclick="prochaineQuestion(42)">Suivant</button>
+                </div>
+
+                <div id="Question43" class="Question">
+                    <p class="para">Quelle est la principale précaution à prendre avant de démarrer par temps de neige ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix43" id="Q4" value="option1" class="faux" required>
+                        <label for="Q4">Laisser le moteur chauffer pendant 10 minutes</label>
+                        <br>
+                        <input type="radio" name="choix43" id="Q5" value="option2" class="faux" required>
+                        <label for="Q5">Vérifier que les pneus sont bien gonflés</label>
+                        <br>
+                        <input type="radio" name="choix43" id="Q6" value="option3" class="vrai" required>
+                        <label for="Q6">Dégager entièrement la neige et la glace des vitres, rétroviseurs et feux</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(43)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback43"></div>
+                    <button type="button" id="nextBouton43" class="next-Bouton" onclick="prochaineQuestion(43)">Suivant</button>
+                </div>
+
+                <div id="Question44" class="Question">
+                    <p class="para">Comment devez-vous adapter votre conduite sur une route verglacée ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix44" id="R4" value="option1" class="vrai" required>
+                        <label for="R4">Accélérer doucement et éviter les mouvements brusques</label>
+                        <br>
+                        <input type="radio" name="choix44" id="R5" value="option2" class="faux" required>
+                        <label for="R5">Utiliser le frein moteur uniquement</label>
+                        <br>
+                        <input type="radio" name="choix44" id="R6" value="option3" class="faux" required>
+                        <label for="R6">Conduire normalement, mais plus lentement</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(44)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback44"></div>
+                    <button type="button" id="nextBouton44" class="next-Bouton" onclick="prochaineQuestion(44)">Suivant</button>
+                </div>
+
+                <div id="Question45" class="Question">
+                    <p class="para">usqu'à quel âge un enfant doit-il être installé dans un siège auto adapté ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix45" id="S4" value="option1" class="faux" required>
+                        <label for="S4">6 ans</label>
+                        <br>
+                        <input type="radio" name="choix45" id="S5" value="option2" class="faux" required>
+                        <label for="S5">10 ans</label>
+                        <br>
+                        <input type="radio" name="choix45" id="S6" value="option3" class="vrai" required>
+                        <label for="S6">12 ans ou jusqu'à ce qu'il atteigne 1,35 mètre</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(45)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback45"></div>
+                    <button type="button" id="nextBouton45" class="next-Bouton" onclick="prochaineQuestion(45)">Suivant</button>
+                </div>
+
+                <div id="Question46" class="Question">
+                    <p class="para"> Où est-il recommandé d'installer un siège auto pour enfant dans le véhicule ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix46" id="T4" value="option1" class="faux" required>
+                        <label for="T4"> Sur le siège avant, face à la route</label>
+                        <br>
+                        <input type="radio" name="choix46" id="T5" value="option2" class="vrai" required>
+                        <label for="T5">Sur le siège arrière, de préférence au centre</label>
+                        <br>
+                        <input type="radio" name="choix46" id="T6" value="option3" class="faux" required>
+                        <label for="T6">Sur le siège avant, dos à la route</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(46)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback46"></div>
+                    <button type="button" id="nextBouton46" class="next-Bouton" onclick="prochaineQuestion(46)">Suivant</button>
+                </div>
+
+                <div id="Question47" class="Question">
+                    <p class="para">Quelle est la pratique recommandée pour une conduite écologique ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix47" id="U4" value="option1" class="faux" required>
+                        <label for="U4">Changer de vitesse à haut régime</label>
+                        <br>
+                        <input type="radio" name="choix47" id="U5" value="option2" class="vrai" required>
+                <label for="U5">Maintenir une vitesse constante et utiliser le régulateur de vitesse si
+                    disponible</label>
+                        <br>
+                        <input type="radio" name="choix47" id="U6" value="option3" class="faux" required>
+                        <label for="U6">Accélérer rapidement pour atteindre la vitesse souhaitée</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(47)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback47"></div>
+                    <button type="button" id="nextBouton47" class="next-Bouton" onclick="prochaineQuestion(47)">Suivant</button>
+                </div>
+
+                <div id="Question48" class="Question">
+                    <p class="para">Comment réduire la consommation de carburant en ville ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix48" id="V4" value="option1" class="vrai" required>
+                        <label for="V4">Éteindre le moteur lors des arrêts prolongés</label>
+                        <br>
+                        <input type="radio" name="choix48" id="V5" value="option2" class="faux" required>
+                        <label for="V5">Utiliser les feux de route en permanence</label>
+                        <br>
+                        <input type="radio" name="choix48" id="V6" value="option3" class="faux" required>
+                        <label for="V6">Conduire avec les fenêtres ouvertes</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(48)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback48"></div>
+                    <button type="button" id="nextBouton48" class="next-Bouton" onclick="prochaineQuestion(48)">Suivant</button>
+                </div>
+
+                <div id="Question49" class="Question">
+                    <p class="para">Quelle est la première chose à faire en arrivant sur les lieux d'un accident ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix49" id="W4" value="option1" class="faux" required>
+                        <label for="W4">Donner à boire aux blessés</label>
+                        <br>
+                        <input type="radio" name="choix49" id="W5" value="option2" class="faux" required>
+                        <label for="W5">Appeler les secours immédiatement</label>
+                        <br>
+                        <input type="radio" name="choix49" id="W6" value="option3" class="vrai" required>
+                        <label for="W6">Assurer votre propre sécurité et celle des autres en sécurisant la zone</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(49)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback49"></div>
+                    <button type="button" id="nextBouton49" class="next-Bouton" onclick="prochaineQuestion(49)">Suivant</button>
+                </div>
+
+                <div id="Question50" class="Question">
+                    <p class="para">Comment vérifier si une personne inconsciente respire ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix50" id="X4" value="option1" class="faux" required>
+                        <label for="X4">En secouant la personne</label>
+                        <br>
+                        <input type="radio" name="choix50" id="X5" value="option2" class="vrai" required>
+                        <label for="X5">En écoutant et en sentant l'air près de sa bouche et de son nez</label>
+                        <br>
+                        <input type="radio" name="choix50" id="X6" value="option3" class="faux" required>
+                        <label for="X6">En lui donnant de petites tapes sur le visage</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(50)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback50"></div>
+                    <button type="button" id="nextBouton50" class="next-Bouton" onclick="prochaineQuestion(50)">Suivant</button>
+                </div>
+
+                <div id="Question51" class="Question">
+                    <p class="para"> Que signifie une ligne blanche continue au centre de la chaussée ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix51" id="Y4" value="option1" class="vrai" required>
+                        <label for="Y4">Elle sépare les voies de circulation opposées et interdit le franchissement.</label>
+                        <br>
+                        <input type="radio" name="choix51" id="Y5" value="option2" class="faux" required>
+                        <label for="Y5"> Elle indique une zone de stationnement autorisée.</label>
+                        <br>
+                        <input type="radio" name="choix51" id="Y6" value="option3" class="faux" required>
+                        <label for="Y6">Elle permet le dépassement si la voie est libre.</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(51)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback51"></div>
+                    <button type="button" id="nextBouton51" class="next-Bouton" onclick="prochaineQuestion(51)">Suivant</button>
+                </div>
+
+                <div id="Question52" class="Question">
+                    <p class="para">Que devez-vous faire si vous rencontrez une ligne jaune en zigzag le long du trottoir ?</p>
+                    <img src=" " alt="Description de l'image">
+                    <fieldset>
+                        <legend>REPONSES</legend>
+
+                        <input type="radio" name="choix52" id="Z4" value="option1" class="faux" required>
+                        <label for="Z4">Vous pouvez vous y arrêter brièvement.</label>
+                        <br>
+                        <input type="radio" name="choix52" id="Z5" value="option2" class="vrai" required>
+                        <label for="Z5">Le stationnement et l'arrêt y sont interdits.</label>
+                        <br>
+                        <input type="radio" name="choix52" id="Z6" value="option3" class="faux" required>
+                        <label for="Z6">Le stationnement y est autorisé, mais l'arrêt est interdit.</label>
+                        <br>
+                        <button type="button" onclick="checkReponse(52)">Vérifie</button>
+                    </fieldset>
+                    <div class="feedback" id="feedback52"></div>
+                    <button type="button" id="nextBouton52" class="next-Bouton" onclick="prochaineQuestion(52)">Suivant</button>
+                </div>
+
+                <form id="quizForm">
+                    <!-- Les questions seront insérées ici par JavaScript -->
+                </form>
+                <button type="button" id="resetButton">Réinitialiser</button>
+                <div class="result" id="result">
+                    <p id="resultMessage"></p>
+                </div>
+        </section>
+
+        <footer>
+            <p>The Ghostwriter 25, janvier 2025</p>
+        </footer>
+
+        <script src="js/exercice-permis.js"></script>
+    </body>
+
+</html>

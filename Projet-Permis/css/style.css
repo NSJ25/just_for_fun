@@ -1,0 +1,107 @@
+html {
+    padding: 60px;
+}
+
+body {
+    background-color: #ffffff;
+    padding: 50px;
+    margin: 0%;
+    font-style: italic;
+    border: 3px solid #4caf50;
+    border-radius: 50px; 
+}
+
+header {
+    text-align: left;
+    margin: 50px;
+}
+
+h1{
+    font-family: 'century schoolbook', souvenir, serif;
+    font-size: 30px;
+    color: #4caf50;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+h2{
+    font-size: 25px;
+    color: #4caf50;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.description-content {
+    text-align: left;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: colorbutton;
+    transition: background-color 0.3s ease;
+}
+
+p {
+    font-family: 'comic sans ',cursive;
+    font-size: 15px;
+    color: #4caf50;
+    text-overflow: ellipsis;
+    overflow-wrap : break-word;
+    word-wrap: break-word ;
+    white-space: normal;
+    text-align: justify;
+}
+
+footer {
+    margin: 10px;
+    margin-top: 60px;
+}
+#footer-text {
+    color: #4caf50;
+    text-align: center;
+    font-weight: bold;
+    font-family:'comic sans ms' cursive;
+}
+button{
+    background-color: #ffffff;
+    border:2px solid #4caf50;
+    border-radius: 10px;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: #024d02;
+}
+button:active{
+    background-color: #4caf50;
+    border:2px solid #ffffff;
+    color: #ffffff;
+}
+a:active{
+    color: #ffffff;
+}

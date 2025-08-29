@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+    <link id="themeClair" rel="stylesheet" href="css/clair.css" title="clair">
+    <link id="themeSombre" rel="stylesheet" href="css/dark.css" title="sombre">
+    <script src="js/script.js"></script>
+</head>
+
+<body onload="init()">
+    <header>
+        <h1> Portfolio </h1>
+        <nav>
+            <label for="menu"> Plus d'infos </label>
+            <select name="menu" id="menu" onchange="changePage(this)">
+                <option value="" selected>--Choisissez une page--</option>
+                <option value="projets.html">Mes projets</option>
+                <option value="infos.html">A propos de moi</option>
+            </select>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sec1">
+            <h2>Description</h2>
+            <p>
+                Bonjour <span id="afficherNom"></span> et bienvenue sur mon portfolio personnel !
+                Ici, vous trouverez une sélection de mes projets récents ainsi que des
+                informations à propos de moi.
+            </p>
+            <p>
+                Ce portfolio a été créé dans le but de présenter mes compétences et
+                mes réalisations en tant passionné de l'informatique.
+                Vous y trouverez des projets variés, allant du développement web à la
+                programmation, en passant par l'electronique.
+            </p>
+            <p>
+                N'hésitez pas à explorer les différentes sections pour en savoir plus
+                sur mes travaux et mes intérêts.
+            </p>
+            <p>
+                Merci de votre visite et j'espère que vous apprécierez découvrir mon
+                portfolio !
+            </p>
+            <p>
+                <strong>Note :</strong> Ce portfolio est un projet personnel fait dans le
+                cadre en fin de ma première année d'etudes en informatique.
+            </p>
+        </section>
+
+        <section id="sec2">
+            <form id="form" onsubmit="return false;">
+                <label for="nom">Votre nom :</label>
+                <input type="text" id="nomVisiteur" name="nom" placeholder="Entrez votre nom">
+                <button type="submit" onclick="afficherNomVisiteur()">Valider</button>
+            </form>
+            <div>
+                <button id="boutonTheme" onclick="changeTheme()">Changé de théme</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p> The Ghostwriter 25, Juin 2025 </p>
+    </footer>
+
+</body>
+
+</html>

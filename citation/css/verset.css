@@ -1,0 +1,163 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #e9ecef;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 3px;
+    height: 93vh;
+    text-align: center;
+
+}
+
+main {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 3px;
+    height: 100%;
+    text-align: center;
+    height: 93vh;
+}
+
+ul>li {
+    list-style: none;
+    padding: 5px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #2b164d;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0;
+    font-family: 'comic sans ms', cursive;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #220138;
+    color: #011934;
+    border: 1px outset #000000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h1 {
+    color: #2b164d;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'pacifico', cursive;
+}
+
+h2 {
+    font-family: 'pacifico', cursive;
+    color: #2b164d;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+button {
+    color: #ffffff;
+    background-color: #1a0055;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 30vh;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #1a0055;
+    border: 2px solid #1a0055;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #1a0055;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+#afficheVers {
+    margin-top: 10vh;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    color: #939090;
+    border: 3px solid #efeded;
+    border-radius: 10px;
+    margin-top: 5px;
+    display: clear;
+}
+
+footer>p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #2b164d;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'pacifico', cursive;
+}
+
+#versets {
+    display: none;
+    margin-top: 15px;
+}
+
+header>p {
+    overflow-wrap: break-word;
+    word-spacing: 2px;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align: justify;
+    color: #2b164d;
+    font-family: 'comic sans ms', sans-serif;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+nav {
+    margin-top: 30px;
+}
+
+#intro {
+    margin-top: 10px;
+}

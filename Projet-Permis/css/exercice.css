@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: white;
+    color: black;
+    margin-top: 160px;
+}
+
+header{
+    background-color: white;
+    border: 1px solid #c1bebe;
+    padding: 0px;
+    border-radius: 5px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+h1 {
+    text-align: center;
+    color: #4caf50;
+    font-size: 30px;
+}
+
+.Question {
+    display: none;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.next-Bouton {
+    display: none;
+    margin-top: 10px;
+}
+
+.result {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 25px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-bar {
+    width: 50%;
+    height: 20px;
+    background-color: #4caf50;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+}
+
+.success-rate {
+    width: 50%;
+    text-align: center;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffffff;
+    border: 1px solid #4caf50;
+    border-radius: 5px;
+    color: #4caf50;
+}
+
+button:active{
+    background-color: #4caf50;
+    color: white;
+}
+
+fieldset {
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--question-bg);
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    margin-right: 10px;
+    color: var(--text-color);
+}
+
+.feedback {
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #777;
+}
+
+.Question img {
+    display: block;
+    margin: 10px auto;
+    max-width: 10%;
+    height: auto;
+}
+
+/* Améliorer la réactivité */
+@media (max-width: 768px) {
+    .Question {
+        padding: 10px;
+    }
+
+    fieldset {
+        margin: 10px 0;
+    }
+
+    .progress-container {
+        flex-direction: column;
+    }
+}

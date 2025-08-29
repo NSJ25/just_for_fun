@@ -1,0 +1,130 @@
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 3px;
+    padding: 3px;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 0px;
+    text-align: center;
+    color: #6b6a6a;
+    border: 3px solid #4b0101;
+    border-radius: 10px;
+    margin: 3px;
+}
+
+ul>li {
+    list-style: none;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #6c6565;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #2b164d;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'roboto mono', sans-serif;
+}
+
+a:hover {
+    color: #4b0101;
+    text-decoration: underline;
+    font-family: 'roboto mono', sans-serif;
+}
+
+main {
+    border: 3px solid #4b0101;
+    border-radius: 10px;
+    margin: 3px;
+    padding: 10px;
+}
+
+h2 {
+    color: #2b164d;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'pacifico', cursive;
+}
+
+p {
+    overflow-wrap: break-word;
+    word-spacing: 2px;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align: justify;
+    color: #2b164d;
+    font-family: 'comic sans ms', sans-serif;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    color: #6b6a6a;
+    border: 3px solid #4b0101;
+    border-radius: 10px;
+    margin-top: 5px;
+    display: clear;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+footer>p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #2b164d;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'pacifico', cursive;
+}
+
+h1 {
+    color: #2b164d;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+    margin-top: 40px;
+    font-family: 'pacifico', cursive;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 0px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0px;
+    margin-top: 50px;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-align: center;
+}
+
+strong {
+    color: #2b164d;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'comic sans ms', sans-serif;
+}

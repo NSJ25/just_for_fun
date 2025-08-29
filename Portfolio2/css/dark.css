@@ -1,0 +1,189 @@
+html {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: #171717;
+    padding: 5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border: #555 solid 3px;
+    position: fixed;
+    top: 1px;
+    left: 2px;
+    right: 2px;
+    width: 99.3%;
+    height: 90px;
+    padding: 0px;
+    margin-bottom: 90px;
+    border-radius: 10px;
+}
+
+nav {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main {
+    margin-top: 90px;
+    padding: 10px;
+    background-color: #171717;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px #0000001a;
+    max-width: 1200px;
+    height: 370px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sec1 {
+    margin: 0%;
+    padding: 0%;
+}
+
+#sec2 {
+    margin: 0%;
+    padding: 0%;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8em;
+    word-spacing: 3px;
+    word-wrap: break-word;
+    white-space: wrap;
+    text-align: justify;
+    color: #cac0c0;
+}
+
+input {
+    width: 180px;
+    height: 15px;
+    border-radius: 7px;
+    background-color: #171717;
+    border: 1px solid #fefbfb;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.63em;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px #4645451a;
+}
+
+
+footer {
+    padding: 0px;
+    text-align: center;
+}
+
+footer>p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.7em;
+    color: #cac0c0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+select {
+    width: 210px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #171717;
+    border: 2px solid #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.63em;
+    padding: 5px;
+    margin: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px #f9f7f71a;
+    color: #cac0c0;
+}
+
+select:hover {
+    background-color: #380202;
+}
+
+select:focus {
+    outline: none;
+    border-color: #310000;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    color: #cac0c0;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4em;
+    color: #cac0c0;
+    text-align: center;
+    margin-top: 17px;
+}
+
+label {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    color: #cac0c0;
+    font: optional;
+    font-weight: bold;
+}
+
+#boutonTheme {
+    width: 150px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #171717;
+    border: 2px solid #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.63em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px #4645451a;
+    text-align: center;
+    color: #cac0c0;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #171717;
+    border: 2px solid #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.63em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px #fffbfb1a;
+    font-weight: bold;
+    color: #cac0c0;
+}
+
+button:hover {
+    background-color: #380202;
+}
+
+#boutonTheme:hover {
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    color: #f1eaea;
+    font-weight: bold;
+}
