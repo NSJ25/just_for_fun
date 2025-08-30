@@ -1,0 +1,64 @@
+html {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #808080;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#startStopMinuteur,
+#startStop {
+    background-color: #00ff00;
+    border: black 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+    color: blanchedalmond;
+    width: 85px;
+    height: 45px;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#chronometre,
+#minuteur {
+    background-color: #b87f3f;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+input {
+    background-color: #e3b682;
+    border: #000000 solid 1px;
+    width: 50px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+button {
+    margin: 10px;
+    padding: 7px;
+    border-radius: 10px;
+    border: #000000 solid 1px;
+    background-color: antiquewhite;
+    color: brown;
+}
