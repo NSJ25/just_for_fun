@@ -1,14 +1,14 @@
-html{
+html {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-header{
+header {
     background-color: #333;
     color: white;
     padding: 0.8%;
@@ -18,7 +18,7 @@ header{
     height: 8%;
 }
 
-main{
+main {
     margin: 0;
     padding: 0.5%;
     width: 100%;
@@ -28,7 +28,7 @@ main{
     align-items: center;
 }
 
-#conteneur{
+#conteneur {
     width: 80%;
     margin: 0 auto;
     padding: 0.5%;
@@ -39,27 +39,28 @@ main{
     grid-template-columns: 1fr 2fr;
 }
 
-h1{
+h1 {
     font-family: 'Lucida Console', sans-serif;
     font-size: 1.8em;
     margin: 0;
 }
 
-h2{
-    font-family:'Lucida Console', sans-serif;
+h2 {
+    font-family: 'Lucida Console', sans-serif;
     font-size: 1.2em;
-    margin: 10px 0;
+    margin: 5px;
     text-align: center;
     font-style: italic;
+    text-decoration: underline;
 }
 
-p{
+p {
     font-family: 'Comic Sans MS', cursive;
     font-size: 0.8em;
     margin: 10px 0;
-}                       
+}
 
-#image{
+#image {
     width: 60%;
     height: 100%;
     background-image: url('./img/logo.jpg');
@@ -68,7 +69,7 @@ p{
     border-radius: 8px;
 }
 
-#photo{
+#photo {
     width: 100%;
     height: 20%;
     display: flex;
@@ -77,17 +78,35 @@ p{
 }
 
 .icon {
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
 }
 
-article{
-    padding: 1%;
-    margin: 1%;
+article {
+    padding: 20px;
+    margin: 5px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: #333 solid 1px;
+    border-radius: 5px;  
+}
+
+address {
+    font-style: normal;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 0.8em;
 }

@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background-color: #171717;
+    background-color: #e7e5e5;
     padding: 5px;
 }
 
@@ -31,7 +31,7 @@ nav {
 main {
     margin-top: 90px;
     padding: 10px;
-    background-color: #171717;
+    background-color: #e7e5e5;
     border-radius: 10px;
     box-shadow: 4px 4px 8px #0000001a;
     max-width: 1200px;
@@ -57,22 +57,21 @@ p {
     word-wrap: break-word;
     white-space: wrap;
     text-align: justify;
-    color: #cac0c0;
 }
 
 input {
     width: 180px;
     height: 15px;
     border-radius: 7px;
-    background-color: #171717;
-    border: 1px solid #fefbfb;
+    background-color: #e7e5e5;
+    border: 1px solid #060606;
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.63em;
     padding: 5px;
     margin: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    box-shadow: 0 2px 5px #4645451a;
+    box-shadow: 0 2px 5px #0000001a;
 }
 
 
@@ -84,7 +83,7 @@ footer {
 footer>p {
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.7em;
-    color: #cac0c0;
+    color: #333;
     text-align: center;
     margin-top: 20px;
 }
@@ -93,7 +92,7 @@ select {
     width: 210px;
     height: 30px;
     border-radius: 5px;
-    background-color: #171717;
+    background-color: #e7e5e5;
     border: 2px solid #ffffff;
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.63em;
@@ -101,23 +100,22 @@ select {
     margin: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    box-shadow: 0 2px 5px #f9f7f71a;
-    color: #cac0c0;
+    box-shadow: 0 2px 5px #0000001a;
 }
 
 select:hover {
-    background-color: #380202;
+    background-color: #c3e8ed;
 }
 
 select:focus {
     outline: none;
-    border-color: #310000;
+    border-color: #070707;
 }
 
 h1 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5em;
-    color: #cac0c0;
+    color: #390139;
     text-align: center;
     margin-left: 50px;
     margin-top: 30px;
@@ -126,7 +124,7 @@ h1 {
 h2 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.4em;
-    color: #cac0c0;
+    color: #390139;
     text-align: center;
     margin-top: 17px;
 }
@@ -134,7 +132,7 @@ h2 {
 label {
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.9em;
-    color: #cac0c0;
+    color: #390139;
     font: optional;
     font-weight: bold;
 }
@@ -143,39 +141,37 @@ label {
     width: 150px;
     height: 30px;
     border-radius: 8px;
-    background-color: #171717;
-    border: 2px solid #ffffff;
+    background-color: #f0f8ff;
+    border: 2px solid #010000;
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.63em;
     cursor: pointer;
     transition: background-color 0.3s ease;
     box-shadow: 0 2px 5px #4645451a;
     text-align: center;
-    color: #cac0c0;
 }
 
 button {
     width: 150px;
     height: 30px;
     border-radius: 8px;
-    background-color: #171717;
-    border: 2px solid #ffffff;
+    background-color: #f0f8ff;
+    border: 2px solid #010000;
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.63em;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    box-shadow: 0 2px 5px #fffbfb1a;
+    box-shadow: 0 2px 5px #4645451a;
     font-weight: bold;
-    color: #cac0c0;
 }
 
 button:hover {
-    background-color: #380202;
+    background-color: #390139;
 }
 
 #boutonTheme:hover {
-    background-color: #f0f8ff;
-    color: #333;
+    background-color: #000000;
+    color: #390139;
 }
 
 div {
@@ -184,6 +180,6 @@ div {
 }
 
 span {
-    color: #f1eaea;
+    color: #390139;
     font-weight: bold;
 }

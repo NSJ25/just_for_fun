@@ -6,7 +6,10 @@ Un dépôt personnel qui regroupe plusieurs petits projets web que je développe
 
 ## 🚀 Projets inclus
 
-### 🌡️ 1. Calcul de température
+### 📕 1. Citations Biblique
+Un generateur de citation biblique qui est aussi mon tout premier projet wed.
+
+### 🌡️ 2. Calcul de température
 Site de conversion entre Celsius, Fahrenheit et Kelvin.  
 Fonctionne entièrement en JavaScript, avec une interface simple et responsive.
 
